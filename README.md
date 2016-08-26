@@ -1,6 +1,9 @@
 # stanford_pilotchair
 Arduino code for pilotchair developed at Stanford University in 2016 summer, supervised by Dr. Pablo Paredes and prof. James Landay.
 
+Mind·ful
+ˈmīn(d)fəl/ (adjective)
+Conscious or aware of something.
 
  * Pilot Chair
  * 
@@ -14,4 +17,9 @@ Arduino code for pilotchair developed at Stanford University in 2016 summer, sup
  * Note that not all entries have a corresponding motor; mat is specficed in constant below.
  * Mixtures of interventions involve an apparent-tactile motion for which each signal sent is overlapped
  * by a factor (e.g. 20ms) for an effective swipe.
+
+
+
+
+
  
