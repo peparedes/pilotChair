@@ -2,7 +2,6 @@
 Arduino code for pilotchair developed at Stanford University in 2016 summer, supervised by Dr. Pablo Paredes and prof. James Landay.
 
 Mind·ful
-
 ˈmīn(d)fəl/ (adjective)
 Conscious or aware of something.
 
