@@ -20,8 +20,7 @@ Conscious or aware of something.
  * each signal sent is overlapped by a factor (e.g. 20ms) for an effective swipe. Apparent Tactile Motion 
  * requires no hard resets in between interventions or subsets of it; we manually packaged and implemented 
  * ovalaps for basic prototype/movements. More updates are to come in the code.
- *
- *
+
 
 Apparent Tactile Motion
 
