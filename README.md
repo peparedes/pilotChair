@@ -2,6 +2,7 @@
 Arduino code for pilotchair developed at Stanford University in 2016 summer, supervised by Dr. Pablo Paredes and prof. James Landay.
 
 Mind·ful
+
 ˈmīn(d)fəl/ (adjective)
 Conscious or aware of something.
 
@@ -10,7 +11,7 @@ Conscious or aware of something.
  * supervisor | paredesp@cs.stanford.edu 
  * developers | minkyuk@andrew.cmu.edu, ml27@princeton.edu
  *         
- * pilotChair.ino supports the activations and control of the motors in the back of the car seat,
+ * PilotChair API is written in Arduino. pilotChair.ino supports the activations and control of the motors in the back of the car seat,
  * motivated and developed from an human-computer interaction perspective. Features with the motor
  * range from activation of a single motor to a activation of a row. Signals received from the seat
  * through arduino are total 14, representing activation of each row/col for a 7x7 matrix of motors.
