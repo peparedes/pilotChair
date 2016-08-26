@@ -17,9 +17,13 @@ Conscious or aware of something.
  * through arduino are total 14, representing activation of each row/col for a 7x7 matrix of motors.
  * Note that not all entries have a corresponding motor; mat is specficed in constant below.
  * Mixtures of interventions involve an apparent-tactile motion for which each signal sent is overlapped
- * by a factor (e.g. 20ms) for an effective swipe.
+ * by a factor (e.g. 20ms) for an effective swipe. Apparent Tactile Motion requires no hard resets
+ * in between interventions or subsets of it; we manually packaged and implemented ovalaps for basic 
+ * prototype/movements. More updates are to come in the code.
+ *
 
-
+Apparent Tactile Motion
+http://ieeexplore.ieee.org/document/7177720/?arnumber=7177720&tag=1
 
 
 
