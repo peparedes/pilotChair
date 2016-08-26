@@ -10,11 +10,14 @@
  * through arduino are total 14, representing activation of each row/col for a 7x7 matrix of motors.
  * Note that not all entries have a corresponding motor; mat is specficed in constant below.
  * Mixtures of interventions involve an apparent-tactile motion for which each signal sent is overlapped
- * by a factor (e.g. 20ms) for an effective swipe.
+ * by a factor (e.g. 20ms) for an effective swipe. Apparent Tactile Motion requires no hard resets
+ * in between interventions or subsets of it; we manually packaged and implemented ovalaps for basic 
+ * prototype/movements. More updates in the code are to come with regards to the algorithm itself.
  * 
  */
 
 // A0, A1 are pre-defined as analaog inputs for first row and col.
+// Note A5,A6 are INACTIVE.
 #define BUTT1_PIN A2
 #define BUTT2_PIN A3
 #define BUTT3_PIN A4
@@ -71,49 +74,49 @@ void rowTest(byte r);
 void colTest(byte c);
 
 /*
- * Switch on a row WITHOUT reset; must be coupled with manual resets.
+ * Turn on a row WITHOUT reset; must be coupled with manual resets.
  */
 void rowOn(byte row);
 
 /*
- * Switch on a col WITHOUT reset; must be coupled with manual resets.
+ * Turn on a col WITHOUT reset; must be coupled with manual resets.
  */
 void colOn(byte col);
 
 /*
- * Switch off a row WITHOUT reset; must be coupled with manual resets.
+ * Turn off a row WITHOUT reset; must be coupled with manual resets.
  */
 void rowOff(byte row);
 
 /*
- * Switch off a col WITHOUT reset; must be coupled with manual resets.
+ * Turn off a col WITHOUT reset; must be coupled with manual resets.
  */
 void colOff(byte col);
 
 /*
- * Switch on multiple rows WITHOUT reset; must be coupled with manual resets.
+ * Turn on multiple rows WITHOUT reset; must be coupled with manual resets.
  * Specify starting and ending index of the row. s < i < e.
  */
 void multiRowOn(byte startRow, byte endRow);
 
 /*
- * Switch on multiple rows WITHOUT reset; must be coupled with manual resets.
+ * Turn on multiple rows WITHOUT reset; must be coupled with manual resets.
  * Specify starting and ending index of the row. s < i < e.
  */
 void multiColOn(byte startCol, byte endCol);
 
 /*
- * Switch on a row WITH hard reset.
+ * Turn on a row WITH hard reset.
  */
 void pckge_rowOn(byte row);
 
 /*
- * Switch on a row WITH reset.
+ * Turn on a row WITH reset.
  */
 void pckge_colOn(byte col);
 
 /*
- * Switch on a single motor WITH reset.
+ * Turn on a single motor WITH reset.
  */
 void singleton(byte row, byte col);
 
@@ -165,6 +168,10 @@ void breathe(byte bottom, byte top);
  * or, missing.
  */
 int getValueAt(int row, int col);
+
+/*
+ * Swipe Right columns, top rows, then left columns respectively.
+ */
 void swipeUShaped(int wait_ms);
 
 /*
