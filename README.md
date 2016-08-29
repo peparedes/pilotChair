@@ -7,7 +7,7 @@ Conscious or aware of something.
 
  * Pilot Chair
  * 
- * supervisor | paredesp@cs.stanford.edu 
+ * supervisor | paredes@cs.stanford.edu 
  * developers | minkyuk@andrew.cmu.edu, ml27@princeton.edu, carriecai08@gmail.com
  *         
  * PilotChair API is written in Arduino. pilotChair.ino supports the activations and control of the 
